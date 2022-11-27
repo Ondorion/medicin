@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="header-top__container container">
+            <nav class="header-top__nav">
+              <button class="header-top__btn">
+                <span></span>
+              </button>
+              <ul class="header-top__menu menu-top">
+                <li class="menu-top__item">
+                  <a href="" class="menu-top__link">О компании</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="" class="menu-top__link">Доставка и оплата</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="" class="menu-top__link">Новости и статьи</a>
+                </li>
+                <li class="menu-top__item">
+                  <a href="" class="menu-top__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <a
+              data-da=".menu-top,535,last"
+              href="mailto:info@medcentr.ru"
+              class="header-top__email"
+              >E-mail:info@medcentr.ru</a
+            >
+
+            <div class="header-center__search-all">
+              <div class="header-center__search-icon">
+                <img src="images/icons/header-search.svg" alt="" />
+              </div>
+              <div class="header-center__search header-top__search">
+                <form class="header-center__form" action="#">
+                  <input
+                    class="header-center__input"
+                    type="text"
+                    placeholder="Что будем искать?"
+                  />
+                  <button class="header-center__btn">
+                    <img src="images/icons/search.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-center">
+          <div class="header-center__container container">
+            <a href="#" class="logo">
+              <img src="images/icons/logo.svg" alt="лого" />
+            </a>
+            <div class="header-center__search">
+              <form class="header-center__form" action="#">
+                <input
+                  class="header-center__input"
+                  type="text"
+                  placeholder="Что будем искать?"
+                />
+                <button class="header-center__btn">
+                  <img src="images/icons/search.svg" alt="" />
+                </button>
+              </form>
+            </div>
+            <div class="header-center__actions actions-header">
+              <div
+                data-da=".header-top__container, 880"
+                class="actions-header__phones"
+              >
+                <a href="#">
+                  <img
+                    class="actions-header__img"
+                    src="images/icons/phone-2.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="tel:79251234567" class="actions-header__phone"
+                  >+7 (925) <span>123-45-67</span>
+                </a>
+                <button class="actions-header__callback" type="button">
+                  Заказать звонок
+                </button>
+              </div>
+              <div
+                data-da=".header-top__container, 880"
+                class="actions-header__cart cart-header"
+              >
+                <div class="cart-header__icon">
+                  <img src="images/icons/cart.svg" alt="" />
+                  <span>2</span>
+                </div>
+                <a href="#" class="cart-header__text">Корзина</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="header-bottom__inner">
+              <div class="header-bottom__info">
+                <span>Меню</span>
+                <button class="header-bottom__btn">
+                  <span></span>
+                </button>
+              </div>
+              <ul class="header-bottom__list">
+                <li class="header-bottom__item">
+                  <a href="" class="header-bottom__item-link"
+                    >Анестезиологическое <br />
+                    оборудование</a
+                  >
+                </li>
+                <li class="header-bottom__item">
+                  <a class="header-bottom__item-link">Запчасти</a>
+                  <ul class="header-bottom__sublist sublist-header">
+                    <li class="sublist-header__item">
+                      <a href="" class="sublist-header__link"
+                        >Для генекологического оборудования</a
+                      >
+                    </li>
+                    <li class="sublist-header__item">
+                      <a href="" class="sublist-header__link"
+                        >Для медицинской мебели</a
+                      >
+                    </li>
+                    <li class="sublist-header__item sublist-header__item-after">
+                      <a class="sublist-header__link"
+                        >Для технических средств реабилитации</a
+                      >
+                      <ul class="sublist-header__sub">
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для противопролежневых матрацев</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных электрических</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел-каталок</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных механических</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sublist-header__item sublist-header__item-after">
+                      <a class="sublist-header__link"
+                        >Для медицинского оборудования</a
+                      >
+                      <ul class="sublist-header__sub">
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для противопролежневых матрацев</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных электрических</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел-каталок</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных механических</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-bottom__item">
+                  <a href="" class="header-bottom__item-link"
+                    >Зуботехническое <br />
+                    оборудование</a
+                  >
+                </li>
+                <li class="header-bottom__item">
+                  <a href="" class="header-bottom__item-link"
+                    >ЛОР <br />
+                    оборудование</a
+                  >
+                </li>
+                <li class="header-bottom__item">
+                  <a class="header-bottom__item-link"
+                    >Диагностическое <br />
+                    оборудование</a
+                  >
+                  <ul class="header-bottom__sublist sublist-header">
+                    <li class="sublist-header__item">
+                      <a href="" class="sublist-header__link"
+                        >Для генекологического оборудования</a
+                      >
+                    </li>
+                    <li class="sublist-header__item">
+                      <a href="" class="sublist-header__link"
+                        >Для медицинской мебели</a
+                      >
+                    </li>
+                    <li class="sublist-header__item sublist-header__item-after">
+                      <a class="sublist-header__link"
+                        >Для технических средств реабилитации</a
+                      >
+                      <ul class="sublist-header__sub">
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для противопролежневых матрацев</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных электрических</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел-каталок</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных механических</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных механических</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-bottom__item">
+                  <a href="" class="header-bottom__item-link"
+                    >Оборудование <br />
+                    для гинекологии</a
+                  >
+                </li>
+                <li class="header-bottom__item">
+                  <a href="" class="header-bottom__item-link"
+                    >Оборудование <br />
+                    для кардиологии</a
+                  >
+                </li>
+              </ul>
+              <a href="#" class="header-bottom__link"> Еще </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main main__cart">
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__container container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__list-item">
+                <a href="#" class="breadcrumbs__list-link">Главная</a>
+              </li>
+              <li class="breadcrumbs__list-item">
+                <a href="#" class="breadcrumbs__list-link"
+                  >Реабилитационное оборудование</a
+                >
+              </li>
+              <li class="breadcrumbs__list-item">
+                <a href="#" class="breadcrumbs__list-link"
+                  >Кресла инвалидные электрические</a
+                >
+              </li>
+              <li class="breadcrumbs__list-item">
+                <span class="breadcrumbs__list-link">
+                  Кресло-коляска для инвалидов H 007
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="content">
+          <div class="container content__container">
+            <div class="content__side side-content">
+              <div class="side-content__items">
+                <div class="side-content__items-main">Категории</div>
+                <div class="side-content__items-inner">
+                  <div class="side-content__item">
+                    <div class="side-content__item-title">
+                      Для генекологического оборудования
+                    </div>
+                    <ul class="side-content__item-list list-side-content">
+                      <li class="list-side-content__item">
+                        <a href="#" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="#" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="#" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="#" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="side-content__item">
+                    <div class="side-content__item-title">
+                      Для медицинской мебели
+                    </div>
+                    <ul class="side-content__item-list list-side-content">
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="side-content__item">
+                    <div class="side-content__item-title">
+                      Для технических средств реабилитации
+                    </div>
+                    <ul class="side-content__item-list list-side-content">
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="side-content__item">
+                    <div class="side-content__item-title">
+                      Для медицинского оборудования
+                    </div>
+                    <ul class="side-content__item-list list-side-content">
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                      <li class="list-side-content__item">
+                        <a href="" class="list-side-content__link">
+                          Для противопролежневых матрацев
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="side-content__stocks">
+                <h3 class="side-content__title">Акции</h3>
+                <div class="side-content__slider swiper">
+                  <div class="side-content__wrapper swiper-wrapper">
+                    <div
+                      class="side-content__slide swiper-slide slide-side-content"
+                    >
+                      <div
+                        style="
+                          background-image: url('images/cart/slide-img.png');
+                        "
+                        class="slide-side-content__img"
+                      ></div>
+                      <div class="slide-side-content__info">
+                        <div class="slide-side-content__prices">
+                          <div class="slide-side-content__prices-new">
+                            15 000p
+                          </div>
+                          <span class="slide-side-content__prices-old"
+                            >24 000p</span
+                          >
+                        </div>
+                        <div class="slide-side-content__desc">
+                          <h5 class="slide-side-content__title">
+                            Пример названия заголовка акционного товара
+                          </h5>
+                          <p class="slide-side-content__text">
+                            Бродгрин смогли увеличить количество проведенных
+                            операций на коленном суставе на 47%
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="side-content__slide swiper-slide slide-side-content"
+                    >
+                      <div
+                        style="
+                          background-image: url('images/cart/slide-img.png');
+                        "
+                        class="slide-side-content__img"
+                      ></div>
+                      <div class="slide-side-content__info">
+                        <div class="slide-side-content__prices">
+                          <div class="slide-side-content__prices-new">
+                            15 000p
+                          </div>
+                          <span class="slide-side-content__prices-old"
+                            >24 000p</span
+                          >
+                        </div>
+                        <div class="slide-side-content__desc">
+                          <h5 class="slide-side-content__title">
+                            Пример названия заголовка акционного товара
+                          </h5>
+                          <p class="slide-side-content__text">
+                            Бродгрин смогли увеличить количество проведенных
+                            операций на коленном суставе на 47%
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="side-content__slide swiper-slide slide-side-content"
+                    >
+                      <div
+                        style="
+                          background-image: url('images/cart/slide-img.png');
+                        "
+                        class="slide-side-content__img"
+                      ></div>
+                      <div class="slide-side-content__info">
+                        <div class="slide-side-content__prices">
+                          <div class="slide-side-content__prices-new">
+                            15 000p
+                          </div>
+                          <span class="slide-side-content__prices-old"
+                            >24 000p</span
+                          >
+                        </div>
+                        <div class="slide-side-content__desc">
+                          <h5 class="slide-side-content__title">
+                            Пример названия заголовка акционного товара
+                          </h5>
+                          <p class="slide-side-content__text">
+                            Бродгрин смогли увеличить количество проведенных
+                            операций на коленном суставе на 47%
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="side-content__slide swiper-slide slide-side-content"
+                    >
+                      <div
+                        style="
+                          background-image: url('images/cart/slide-img.png');
+                        "
+                        class="slide-side-content__img"
+                      ></div>
+                      <div class="slide-side-content__info">
+                        <div class="slide-side-content__prices">
+                          <div class="slide-side-content__prices-new">
+                            15 000p
+                          </div>
+                          <span class="slide-side-content__prices-old"
+                            >24 000p</span
+                          >
+                        </div>
+                        <div class="slide-side-content__desc">
+                          <h5 class="slide-side-content__title">
+                            Пример названия заголовка акционного товара
+                          </h5>
+                          <p class="slide-side-content__text">
+                            Бродгрин смогли увеличить количество проведенных
+                            операций на коленном суставе на 47%
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="side-content__slide swiper-slide slide-side-content"
+                    >
+                      <div
+                        style="
+                          background-image: url('images/cart/slide-img.png');
+                        "
+                        class="slide-side-content__img"
+                      ></div>
+                      <div class="slide-side-content__info">
+                        <div class="slide-side-content__prices">
+                          <div class="slide-side-content__prices-new">
+                            15 000p
+                          </div>
+                          <span class="slide-side-content__prices-old"
+                            >24 000p</span
+                          >
+                        </div>
+                        <div class="slide-side-content__desc">
+                          <h5 class="slide-side-content__title">
+                            Пример названия заголовка акционного товара
+                          </h5>
+                          <p class="slide-side-content__text">
+                            Бродгрин смогли увеличить количество проведенных
+                            операций на коленном суставе на 47%
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="side-content__dots"></div>
+                  <div class="side-content__navi">
+                    <button class="swiper-button-prev">
+                      <img src="images/cart/arrow-left-yellow.png" alt="" />
+                    </button>
+                    <button class="swiper-button-next">
+                      <img src="images/cart/arrow-right-yellow.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content__main main-content">
+              <div class="main-content__cart cart-content-main">
+                <div class="cart-content-main__view">
+                  <div
+                    data-da=".view-info, 1039.98, 3"
+                    class="cart-content-main__view-slider view-sliders"
+                  >
+                    <div
+                      class="view-sliders__mini-slider mini-slider-view swiper"
+                    >
+                      <div class="mini-slider-view__wrapper swiper-wrapper">
+                        <div class="mini-slider-view__slide swiper-slide">
+                          <div class="mini-slider-view__img">
+                            <img src="images/cart-slider/big.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="mini-slider-view__slide swiper-slide">
+                          <div class="mini-slider-view__img">
+                            <img src="images/cart-slider/1.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="mini-slider-view__slide swiper-slide">
+                          <div class="mini-slider-view__img">
+                            <img src="images/cart-slider/2.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="mini-slider-view__slide swiper-slide">
+                          <div class="mini-slider-view__img">
+                            <img src="images/cart-slider/3.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mini-slider-view__navi">
+                      <button class="swiper-button-prev">
+                        <img src="images/cart-slider/arrow.png" alt="" />
+                      </button>
+                      <button class="swiper-button-next">
+                        <img src="images/cart-slider/arrow.png" alt="" />
+                      </button>
+                    </div>
+                    <div
+                      class="view-sliders__main-slider main-slider-view swiper"
+                    >
+                      <div class="main-slider-view__wrapper swiper-wrapper">
+                        <div class="main-slider-view__slide swiper-slide">
+                          <a
+                            data-fslightbox
+                            href="images/cart-slider/big.png"
+                            class="main-slider-view__img"
+                          >
+                            <img src="images/cart-slider/big.png" alt="" />
+                          </a>
+                        </div>
+                        <div class="main-slider-view__slide swiper-slide">
+                          <a
+                            data-fslightbox
+                            href="images/cart-slider/1.png"
+                            class="main-slider-view__img"
+                          >
+                            <img src="images/cart-slider/1.png" alt="" />
+                          </a>
+                        </div>
+                        <div class="main-slider-view__slide swiper-slide">
+                          <a
+                            data-fslightbox
+                            href="images/cart-slider/2.png"
+                            class="main-slider-view__img"
+                          >
+                            <img src="images/cart-slider/2.png" alt="" />
+                          </a>
+                        </div>
+                        <div class="main-slider-view__slide swiper-slide">
+                          <a
+                            data-fslightbox
+                            href="images/cart-slider/3.png"
+                            class="main-slider-view__img"
+                          >
+                            <img src="images/cart-slider/3.png" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-content-main__view-info view-info">
+                    <div class="view-info__top">
+                      <div class="view-info__top-title">Артикул 1004000022</div>
+                      <div class="view-info__top-links">
+                        <a href="#" class="view-info__top-link">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            version="1.1"
+                          >
+                            <g id="surface1">
+                              <path
+                                fill="#25bea0"
+                                style="
+                                  stroke: none;
+                                  fill-rule: nonzero;
+                                  fill-opacity: 1;
+                                "
+                                d="M 6 0 C 4.34375 0 3 1.34375 3 3 L 3 7.5 L 6 7.5 L 6 3 L 16.625 3 L 18 4.375 L 18 7.5 L 21 7.5 L 21 4.375 C 21 3.578125 20.6875 2.8125 20.125 2.25 L 18.75 0.875 C 18.1875 0.3125 17.421875 0 16.625 0 Z M 18 16.5 L 18 21 L 6 21 L 6 16.5 Z M 21 18 L 22.5 18 C 23.328125 18 24 17.328125 24 16.5 L 24 12 C 24 10.34375 22.65625 9 21 9 L 3 9 C 1.34375 9 0 10.34375 0 12 L 0 16.5 C 0 17.328125 0.671875 18 1.5 18 L 3 18 L 3 21 C 3 22.65625 4.34375 24 6 24 L 18 24 C 19.65625 24 21 22.65625 21 21 Z M 20.25 13.875 C 19.625 13.875 19.125 13.375 19.125 12.75 C 19.125 12.125 19.625 11.625 20.25 11.625 C 20.875 11.625 21.375 12.125 21.375 12.75 C 21.375 13.375 20.875 13.875 20.25 13.875 Z M 20.25 13.875 "
+                              />
+                            </g>
+                          </svg>
+                        </a>
+                        <a href="#" class="view-info__top-link">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="20px"
+                            height="27px"
+                            viewBox="0 0 20 26"
+                            version="1.1"
+                          >
+                            <g id="surface1">
+                              <path
+                                fill="#25bea0"
+                                style="
+                                  stroke: none;
+                                  fill-rule: nonzero;
+                                  fill-opacity: 1;
+                                "
+                                d="M 3.332031 0 C 1.496094 0 0 1.457031 0 3.25 L 0 22.75 C 0 24.542969 1.496094 26 3.332031 26 L 16.667969 26 C 18.503906 26 20 24.542969 20 22.75 L 20 8.125 L 13.332031 8.125 C 12.410156 8.125 11.667969 7.398438 11.667969 6.5 L 11.667969 0 Z M 13.332031 0 L 13.332031 6.5 L 20 6.5 Z M 3.332031 11.375 L 4.582031 11.375 C 6.191406 11.375 7.5 12.648438 7.5 14.21875 C 7.5 15.789062 6.191406 17.0625 4.582031 17.0625 L 4.167969 17.0625 L 4.167969 18.6875 C 4.167969 19.132812 3.792969 19.5 3.332031 19.5 C 2.875 19.5 2.5 19.132812 2.5 18.6875 L 2.5 12.1875 C 2.5 11.742188 2.875 11.375 3.332031 11.375 Z M 4.582031 15.4375 C 5.277344 15.4375 5.832031 14.894531 5.832031 14.21875 C 5.832031 13.542969 5.277344 13 4.582031 13 L 4.167969 13 L 4.167969 15.4375 Z M 8.332031 12.1875 C 8.332031 11.742188 8.707031 11.375 9.167969 11.375 L 10.417969 11.375 C 11.796875 11.375 12.917969 12.46875 12.917969 13.8125 L 12.917969 17.0625 C 12.917969 18.40625 11.796875 19.5 10.417969 19.5 L 9.167969 19.5 C 8.707031 19.5 8.332031 19.132812 8.332031 18.6875 Z M 10 17.875 L 10.417969 17.875 C 10.875 17.875 11.25 17.507812 11.25 17.0625 L 11.25 13.8125 C 11.25 13.367188 10.875 13 10.417969 13 L 10 13 Z M 15 11.375 L 17.5 11.375 C 17.957031 11.375 18.332031 11.742188 18.332031 12.1875 C 18.332031 12.632812 17.957031 13 17.5 13 L 15.832031 13 L 15.832031 14.625 L 17.5 14.625 C 17.957031 14.625 18.332031 14.992188 18.332031 15.4375 C 18.332031 15.882812 17.957031 16.25 17.5 16.25 L 15.832031 16.25 L 15.832031 18.6875 C 15.832031 19.132812 15.457031 19.5 15 19.5 C 14.542969 19.5 14.167969 19.132812 14.167969 18.6875 L 14.167969 12.1875 C 14.167969 11.742188 14.542969 11.375 15 11.375 Z M 15 11.375 "
+                              />
+                            </g>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="view-info__subtitle">В наличие</div>
+                    <h3 class="view-info__title">
+                      Кресло-коляска для инвалидов H 007
+                    </h3>
+                    <div class="view-info__prices">
+                      <span class="view-info__prices-new"> 215 000p. </span>
+                      <span class="view-info__prices-old"> 215 000p </span>
+                    </div>
+                    <button class="view-info__btn button">В корзину</button>
+                  </div>
+                </div>
+                <div class="cart-content-main__desc desc-cart">
+                  <div class="desc-cart__main">
+                    <h4 class="desc-cart__main-title">Описание</h4>
+                    <p class="desc-cart__main-text">
+                      Аппарат Ultra-Tonic предназначен для лифтинга и омоложения
+                      кожи ультразвуком и укрепления мышц при помощи
+                      электростимуляции. Прибор имеет лифтинговый эффект,
+                      увлажняет и тонизирует кожу лица и тела
+                    </p>
+                    <p class="desc-cart__main-text">
+                      Наступило время компактных домашних косметологических
+                      комбайнов, которые сочетают в себе методики, применяемые в
+                      дорогостоящих салонах и клиниках красоты. Таким комбайном
+                      является прибор Ultra-Tonic m115 французской фирмы
+                      Gezatone, ведь в нем сочетаются методики ультразвукового
+                      массажа и электромиостимуляции для укрепления мышц лица и
+                      шеи. Аппарат Ultra-Tonic m115 подтягивает вялые мышцы лица
+                      и тела, разглаживает мимические морщины, укрепляет кожу и
+                      повышает ее тонус, производит «безоперационный» лифтинг
+                      лица и шеи.
+                    </p>
+                    <p class="desc-cart__main-text">
+                      Прибор Ultra-Tonic m115 портативный, безопасный и очень
+                      удобный в применении аппарат, который может использоваться
+                      как дома, так и на отдыхе, и в путешествиях. Ultra-Tonic
+                      m115 сделает уход за собой первоклассным и
+                      профессиональным, то есть таким, как в лучших салонах мира
+                    </p>
+                  </div>
+                  <div class="desc-cart__effec">
+                    <h4 class="desc-cart__effec-title">
+                      Эффекты от применения прибора Ultra-Tonic m115 Gezatone:
+                    </h4>
+                    <ul class="desc-cart__effec-list">
+                      <li class="desc-cart__effec-list-item">
+                        Борьба с мимическими морщинами на лбу, переносице,
+                        вокруг губ и глаз
+                      </li>
+                      <li class="desc-cart__effec-list-item">
+                        Снятие спазма мимических мышц
+                      </li>
+                      <li class="desc-cart__effec-list-item">
+                        Улучшение микроциркуляции крови и лимфы, улучшение цвета
+                        лица
+                      </li>
+                      <li class="desc-cart__effec-list-item">
+                        Активизация выработки собственного коллагена и эластина
+                      </li>
+                      <li class="desc-cart__effec-list-item">
+                        Борьба с рубцами, спайками, растяжками
+                      </li>
+                      <li class="desc-cart__effec-list-item">
+                        Уменьшение проявлений целлюлита
+                      </li>
+                      <li class="desc-cart__effec-list-item">
+                        Усиление проведения косметических средств в глубокие
+                        слои кожи
+                      </li>
+                      <li class="desc-cart__effec-list-item">
+                        Активный лифтинг лица и шеи, тонизация мышц, потерявших
+                        упругость
+                      </li>
+                      <li class="desc-cart__effec-list-item">
+                        Эффективное снятие отеков, лимфодренаж, выведение
+                        токсинов, шлаков, продуктов метаболизма
+                      </li>
+                      <li class="desc-cart__effec-list-item">
+                        Улучшение овала лица, борьба со вторым подбородком,
+                        устранение обвисания мышц
+                      </li>
+                      <li class="desc-cart__effec-list-item">
+                        Основные функции аппарата Ultra-Tonic m115:
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="desc-cart__func">
+                    <h4 class="desc-cart__func-title">
+                      Функция ультразвукового микромассажа
+                    </h4>
+                    <p class="desc-cart__func-text">
+                      В приборе Ultra-Tonic m115 установлен генератор звуковых
+                      колебаний, который производит высокочастотные волны звука
+                      с частотой 1МГц (1 миллион колебаний в секунду), которые
+                      активно воздействуют на ткань, производя массаж на
+                      клеточном уровне. Такой высокочастотный микромассаж мягко
+                      и деликатно стимулирует клетки кожи, улучшается метаболизм
+                      клеток, процессы питания и дыхания клеток. Работа всех
+                      систем кожи усиливается, микроциркуляция крови и лимфы
+                      активизируется, снимается спазм мимической мускулатуры,
+                      которая и формирует морщины. В результате цвет лица
+                      улучшается, происходит лифтинг лица и шеи, кожа становится
+                      более ровной, упругой и эластичной, глубина и количество
+                      морщин уменьшается. Кроме того, ультразвук обладает
+                      способностью усиливать проникновение косметических средств
+                      , это явление в косметологии называется ультрафонофорез.
+                      Таким образом, активные компоненты косметики усваиваются
+                      живыми клетками кожи, глубоко увлажняя и питая кожу,
+                      насыщая ее элементами, необходимыми для
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-content__delivery delivery-content">
+                <h3 class="delivery-content__title">Информация о доставке</h3>
+                <div class="delivery-content__exam exam-delivery-content">
+                  <div class="exam-delivery-content__item">
+                    <h4 class="exam-delivery-content__title">
+                      Курьерская доставка
+                    </h4>
+                    <p class="exam-delivery-content__text">
+                      Доставка товаров магазина "Ценные советы" производится
+                      собственной курьерской службой. Как правило, заказ
+                      доставляется день в день или на следующий день. Заказы
+                      принимаются только
+                    </p>
+                    <span class="exam-delivery-content__price">
+                      Курьерская доставка - 200руб</span
+                    >
+                  </div>
+                  <div class="exam-delivery-content__item">
+                    <h4 class="exam-delivery-content__title">
+                      Доставка по России
+                    </h4>
+                    <p class="exam-delivery-content__text">
+                      Доставка товаров магазина "Ценные советы" производится
+                      Почтой России и курьерской службой Major Express и
+                      транспортными компаниями "Деловые линии", "Автотрейдинг" и
+                      "Желдорэкспедиция".
+                    </p>
+                  </div>
+                </div>
+                <div class="delivery-content__take take-delivery-content">
+                  <h3 class="take-delivery-content__title">Самовывоз</h3>
+                  <div class="take-delivery-content__note">
+                    Вы можете самостоятельно забрать товар по следующим адресам:
+                  </div>
+                  <ul class="take-delivery-content__list">
+                    <li class="take-delivery-content__item">
+                      ул. Батурина 27 ТЦ "Славянский Базар" 1 этаж, секция 27
+                    </li>
+                    <li class="take-delivery-content__item">
+                      ул. Добросельская 171Б ТЦ "Алмаз" вход сторца здания
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="main-content__similar similar-content">
+                <h3 class="similar-content__title title">Похожие товары</h3>
+                <div class="similar-content__slider-inner">
+                  <div class="similar-content__slider swiper">
+                    <div class="similar-content__wrapper swiper-wrapper">
+                      <div class="similar-content__slide swiper-slide">
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__img">
+                            <img src="images/similar/1.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-коляска для инвалидов H 007
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >15 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="similar-content__slide similar-content__slide-new swiper-slide"
+                      >
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__warn">NEW</div>
+                          <div class="similar-content__img">
+                            <img src="images/similar/2.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-кровать медицинская многофункциональная
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >215 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div class="similar-content__slide swiper-slide">
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__img">
+                            <img src="images/similar/1.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-коляска для инвалидов H 007
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >15 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="similar-content__slide similar-content__slide-hit swiper-slide"
+                      >
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__warn">ХИТ</div>
+                          <div class="similar-content__img">
+                            <img src="images/similar/2.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-кровать медицинская многофункциональная
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >215 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div class="similar-content__slide swiper-slide">
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__img">
+                            <img src="images/similar/1.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-коляска для инвалидов H 007
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >15 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="similar-content__slide similar-content__slide-new swiper-slide"
+                      >
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__warn">NEW</div>
+                          <div class="similar-content__img">
+                            <img src="images/similar/2.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-кровать медицинская многофункциональная
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >215 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div class="similar-content__slide swiper-slide">
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__img">
+                            <img src="images/similar/1.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-коляска для инвалидов H 007
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >15 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="similar-content__slide similar-content__slide-hit swiper-slide"
+                      >
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__warn">ХИТ</div>
+                          <div class="similar-content__img">
+                            <img src="images/similar/2.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-кровать медицинская многофункциональная
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >215 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div class="similar-content__slide swiper-slide">
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__img">
+                            <img src="images/similar/1.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-коляска для инвалидов H 007
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >15 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="similar-content__slide similar-content__slide-new swiper-slide"
+                      >
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__warn">NEW</div>
+                          <div class="similar-content__img">
+                            <img src="images/similar/2.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-кровать медицинская многофункциональная
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >215 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div class="similar-content__slide swiper-slide">
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__img">
+                            <img src="images/similar/1.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-коляска для инвалидов H 007
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >15 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="similar-content__slide similar-content__slide-hit swiper-slide"
+                      >
+                        <a href="#" class="similar-content__inner">
+                          <div class="similar-content__warn">ХИТ</div>
+                          <div class="similar-content__img">
+                            <img src="images/similar/2.png" alt="" />
+                          </div>
+                          <h4 class="similar-content__subtitle">
+                            Кресло-кровать медицинская многофункциональная
+                          </h4>
+                          <div class="similar-content__prices">
+                            <span class="similar-content__prices-new"
+                              >215 000p.</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="similar-content__navi">
+                    <button class="swiper-button-prev similar-content__prev">
+                      <img src="images/icons/slider-arrow-prev.svg" alt="" />
+                    </button>
+                    <button class="swiper-button-next similar-content__next">
+                      <img src="images/icons/slider-arrow-next.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="look">
+          <div class="container look__container">
+            <div class="look__title title">Смотрите также</div>
+            <div class="look__slider slider-look swiper">
+              <div class="slider-look__wrapper swiper-wrapper">
+                <div class="similar-content__slide swiper-slide">
+                  <a href="#" class="similar-content__inner">
+                    <div class="similar-content__img">
+                      <img src="images/similar/1.png" alt="" />
+                    </div>
+                    <h4 class="similar-content__subtitle">
+                      Кресло-коляска для инвалидов H 007
+                    </h4>
+                    <div class="similar-content__prices">
+                      <span class="similar-content__prices-new">15 000p.</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="similar-content__slide swiper-slide">
+                  <a href="#" class="similar-content__inner">
+                    <div class="similar-content__img">
+                      <img src="images/similar/2.png" alt="" />
+                    </div>
+                    <h4 class="similar-content__subtitle">
+                      Кресло-кровать медицинская многофункциональная
+                    </h4>
+                    <div class="similar-content__prices">
+                      <span class="similar-content__prices-new">215 000p.</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="similar-content__slide swiper-slide">
+                  <a href="#" class="similar-content__inner">
+                    <div class="similar-content__img">
+                      <img src="images/similar/1.png" alt="" />
+                    </div>
+                    <h4 class="similar-content__subtitle">
+                      Кресло-коляска для инвалидов H 007
+                    </h4>
+                    <div class="similar-content__prices">
+                      <span class="similar-content__prices-new">15 000p.</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="similar-content__slide swiper-slide">
+                  <a href="#" class="similar-content__inner">
+                    <div class="similar-content__img">
+                      <img src="images/similar/2.png" alt="" />
+                    </div>
+                    <h4 class="similar-content__subtitle">
+                      Кресло-кровать медицинская многофункциональная
+                    </h4>
+                    <div class="similar-content__prices">
+                      <span class="similar-content__prices-new">215 000p.</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="similar-content__slide swiper-slide">
+                  <a href="#" class="similar-content__inner">
+                    <div class="similar-content__img">
+                      <img src="images/similar/1.png" alt="" />
+                    </div>
+                    <h4 class="similar-content__subtitle">
+                      Кресло-коляска для инвалидов H 007
+                    </h4>
+                    <div class="similar-content__prices">
+                      <span class="similar-content__prices-new">15 000p.</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="similar-content__slide swiper-slide">
+                  <a href="#" class="similar-content__inner">
+                    <div class="similar-content__img">
+                      <img src="images/similar/2.png" alt="" />
+                    </div>
+                    <h4 class="similar-content__subtitle">
+                      Кресло-кровать медицинская многофункциональная
+                    </h4>
+                    <div class="similar-content__prices">
+                      <span class="similar-content__prices-new">215 000p.</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="look__navi">
+              <button class="swiper-button-prev look__prev">
+                <img src="images/icons/slider-arrow-prev.svg" alt="" />
+              </button>
+              <button class="swiper-button-next look__next">
+                <img src="images/icons/slider-arrow-next.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="know">
+          <div class="know__container container">
+            <h4 class="know__title title">Медицинские знания</h4>
+
+            <div class="know__slider swiper">
+              <div class="know__slider-wrapper swiper-wrapper">
+                <div class="know__item swiper-slide">
+                  <div
+                    class="know__item-img"
+                    style="background-image: url(images/know/bg-2.png)"
+                  ></div>
+                  <div class="know__item-info">
+                    <a class="know__item-info__title" href="#">
+                      Как правильно выбрать косметологический лазер?
+                    </a>
+                    <p class="know__item-info__text">
+                      Лазеры и другие устройства для эпиляции, такие, как IPL
+                      системы, глубоко залегли в области эстетической...
+                    </p>
+                  </div>
+                </div>
+                <div class="know__item swiper-slide">
+                  <div
+                    class="know__item-img"
+                    style="background-image: url(images/know/bg-2.png)"
+                  ></div>
+                  <div class="know__item-info">
+                    <a class="know__item-info__title" href="#">
+                      Как правильно выбрать косметологический лазер?
+                    </a>
+                    <p class="know__item-info__text">
+                      Лазеры и другие устройства для эпиляции, такие, как IPL
+                      системы, глубоко залегли в области эстетической...
+                    </p>
+                  </div>
+                </div>
+                <div class="know__item swiper-slide">
+                  <div
+                    class="know__item-img"
+                    style="background-image: url(images/know/bg-2.png)"
+                  ></div>
+                  <div class="know__item-info">
+                    <a class="know__item-info__title" href="#">
+                      Как правильно выбрать косметологический лазер?
+                    </a>
+                    <p class="know__item-info__text">
+                      Лазеры и другие устройства для эпиляции, такие, как IPL
+                      системы, глубоко залегли в области эстетической...
+                    </p>
+                  </div>
+                </div>
+                <div class="know__item swiper-slide">
+                  <div
+                    class="know__item-img"
+                    style="background-image: url(images/know/bg-2.png)"
+                  ></div>
+                  <div class="know__item-info">
+                    <a class="know__item-info__title" href="#">
+                      Как правильно выбрать косметологический лазер?
+                    </a>
+                    <p class="know__item-info__text">
+                      Лазеры и другие устройства для эпиляции, такие, как IPL
+                      системы, глубоко залегли в области эстетической...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="know__dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="marks">
+          <div class="marks__container">
+            <div class="container">
+              <div class="marks__slider slider-marks">
+                <div class="slider-marks__item">
+                  <img src="images/marks/1.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/2.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/3.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/4.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/5.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/6.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/1.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/1.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__desc">
+            <a href="#" class="footer__logo">
+              <img src="images/icons/logo.svg" alt="" />
+            </a>
+            <p class="footer__desc-text">
+              Дискриптор коротко описывающий деятельность компании в несколько
+              строчек
+            </p>
+            <span class="footer__desc-copyright"
+              >© 2017 “ООО Ценные Советы” Все права защищены</span
+            >
+          </div>
+
+          <div class="footer__list footer__list-first">
+            <h4 class="footer__list-title footer__title footer__title-after">
+              Меню:
+            </h4>
+            <ul class="footer__sublist list-footer">
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">О компании</a>
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">Доставка и оплата</a>
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">Новости и статьи</a>
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">Контакты</a>
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">Обьявления</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__list">
+            <h4 class="footer__list-title footer__title footer__title-after">
+              Популярные категории:
+            </h4>
+            <ul class="footer__sublist list-footer">
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link"
+                  >Анастезиологическое оборудование</a
+                >
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link"
+                  >Оборудование для кардиологии</a
+                >
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link"
+                  >Зуботехническое оборудование</a
+                >
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">ЛОР оборудование</a>
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">Обьявления</a>
+              </li>
+            </ul>
+            <a href="" class="footer__list-link"> Перейти в каталог </a>
+          </div>
+
+          <div class="footer__feedback feedback-footer">
+            <h4 class="feedback-footer__title footer__title">
+              Связаться с нами:
+            </h4>
+            <div class="feedback-footer__phone">
+              <span class="phone-feedback"> +7 (925) 123-45-67 </span>
+              <a href="tell:79251234567" class="phone-feedback__link">
+                Заказать звонок
+              </a>
+            </div>
+            <div class="feedback-footer__mail">
+              <span class="mail-feedback"> info@test.server.ru </span>
+              <a href="mailto:info@test.server.ru" class="mail-feedback__link">
+                Написать нам
+              </a>
+            </div>
+            <div class="feedback-footer__social">
+              <a href="" class="feedback-footer__social-item">
+                <img
+                  src="images/icons/social/od.svg"
+                  alt="одноклассники"
+                  class="feedback-footer__social-img"
+                />
+              </a>
+              <a href="" class="feedback-footer__social-item">
+                <img
+                  src="images/icons/social/od.svg"
+                  alt="вконтакте"
+                  class="feedback-footer__social-img"
+                />
+              </a>
+              <a href="" class="feedback-footer__social-item">
+                <img
+                  src="images/icons/social/od.svg"
+                  alt="фейсбук"
+                  class="feedback-footer__social-img"
+                />
+              </a>
+              <a href="" class="feedback-footer__social-item">
+                <img
+                  src="images/icons/social/od.svg"
+                  alt="гугл плюс"
+                  class="feedback-footer__social-img"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

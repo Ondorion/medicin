@@ -1,1002 +1,1241 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>medcentre</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>medcentre</title>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="header-top">
-      <div class="header-top__container container">
-        <nav class="header-top__nav">
-          <button class="header-top__btn">
-            <span></span>
-          </button>
-          <ul class="header-top__menu menu-top">
-            <li class="menu-top__item">
-              <a href="" class="menu-top__link">О компании</a>
-            </li>
-            <li class="menu-top__item">
-              <a href="" class="menu-top__link">Доставка и оплата</a>
-            </li>
-            <li class="menu-top__item">
-              <a href="" class="menu-top__link">Новости и статьи</a>
-            </li>
-            <li class="menu-top__item">
-              <a href="" class="menu-top__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <a data-da=".menu-top,535,last" href="mailto:info@medcentr.ru"
-          class="header-top__email">E-mail:info@medcentr.ru</a>
-
-        <div class="header-center__search-all">
-          <div class="header-center__search-icon">
-            <img src="images/icons/header-search.svg" alt="">
-          </div>
-          <div class="header-center__search header-top__search">
-            <form class="header-center__form" action="#">
-              <input class="header-center__input" type="text" placeholder="Что будем искать?">
-              <button class="header-center__btn">
-                <img src="images/icons/search.svg" alt="">
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="header-top__container container">
+            <nav class="header-top__nav">
+              <button class="header-top__btn">
+                <span></span>
               </button>
-            </form>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-    <div class="header-center">
-      <div class="header-center__container container">
-        <a href="#" class="logo">
-          <img src="images/icons/logo.svg" alt="лого">
-        </a>
-        <div class="header-center__search">
-          <form class="header-center__form" action="#">
-            <input class="header-center__input" type="text" placeholder="Что будем искать?">
-            <button class="header-center__btn">
-              <img src="images/icons/search.svg" alt="">
-            </button>
-          </form>
-        </div>
-        <div class="header-center__actions actions-header">
-          <div data-da=".header-top__container, 880" class="actions-header__phones">
-            <a href="#">
-              <img class="actions-header__img" src="images/icons/phone-2.svg" alt="">
-            </a>
-            <a href="tel:79251234567" class="actions-header__phone">+7 (925) <span>123-45-67</span> </a>
-            <button class="actions-header__callback" type="button">
-              Заказать звонок
-            </button>
-          </div>
-          <div data-da=".header-top__container, 880" class="actions-header__cart cart-header">
-            <div class="cart-header__icon">
-              <img src="images/icons/cart.svg" alt="">
-              <span>2</span>
-            </div>
-            <a href="#" class="cart-header__text">Корзина</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="header-bottom">
-      <div class="container">
-        <div class="header-bottom__inner">
-          <div class="header-bottom__info">
-            <span>Меню</span>
-            <button class="header-bottom__btn">
-              <span></span>
-            </button>
-          </div>
-          <ul class="header-bottom__list">
-            <li class="header-bottom__item">
-              <a href="" class="header-bottom__item-link">Анестезиологическое <br>
-                оборудование</a>
-            </li>
-            <li class="header-bottom__item">
-              <a class="header-bottom__item-link">Запчасти</a>
-              <ul class="header-bottom__sublist sublist-header">
-                <li class="sublist-header__item">
-                  <a href="" class="sublist-header__link">Для генекологического оборудования</a>
+              <ul class="header-top__menu menu-top">
+                <li class="menu-top__item">
+                  <a href="" class="menu-top__link">О компании</a>
                 </li>
-                <li class="sublist-header__item">
-                  <a href="" class="sublist-header__link">Для медицинской мебели</a>
+                <li class="menu-top__item">
+                  <a href="" class="menu-top__link">Доставка и оплата</a>
                 </li>
-                <li class="sublist-header__item sublist-header__item-after">
-                  <a class="sublist-header__link">Для технических средств реабилитации</a>
-                  <ul class="sublist-header__sub">
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для противопролежневых матрацев</a>
-                    </li>
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для кресел инвалидных электрических</a>
-                    </li>
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для кресел-каталок</a>
-                    </li>
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для кресел инвалидных механических</a>
-                    </li>
-                  </ul>
+                <li class="menu-top__item">
+                  <a href="" class="menu-top__link">Новости и статьи</a>
                 </li>
-                <li class="sublist-header__item sublist-header__item-after">
-                  <a class="sublist-header__link">Для медицинского оборудования</a>
-                  <ul class="sublist-header__sub">
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для противопролежневых матрацев</a>
-                    </li>
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для кресел инвалидных электрических</a>
-                    </li>
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для кресел-каталок</a>
-                    </li>
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для кресел инвалидных механических</a>
-                    </li>
-                  </ul>
+                <li class="menu-top__item">
+                  <a href="" class="menu-top__link">Контакты</a>
                 </li>
               </ul>
-            </li>
-            <li class="header-bottom__item">
-              <a href="" class="header-bottom__item-link">Зуботехническое <br>
-                оборудование</a>
-            </li>
-            <li class="header-bottom__item">
-              <a href="" class="header-bottom__item-link">ЛОР <br>
-                оборудование</a>
-            </li>
-            <li class="header-bottom__item">
-              <a class="header-bottom__item-link">Диагностическое <br>
-                оборудование</a>
-              <ul class="header-bottom__sublist sublist-header">
-                <li class="sublist-header__item">
-                  <a href="" class="sublist-header__link">Для генекологического оборудования</a>
+            </nav>
+            <a
+              data-da=".menu-top,535,last"
+              href="mailto:info@medcentr.ru"
+              class="header-top__email"
+              >E-mail:info@medcentr.ru</a
+            >
+
+            <div class="header-center__search-all">
+              <div class="header-center__search-icon">
+                <img src="images/icons/header-search.svg" alt="" />
+              </div>
+              <div class="header-center__search header-top__search">
+                <form class="header-center__form" action="#">
+                  <input
+                    class="header-center__input"
+                    type="text"
+                    placeholder="Что будем искать?"
+                  />
+                  <button class="header-center__btn">
+                    <img src="images/icons/search.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-center">
+          <div class="header-center__container container">
+            <a href="#" class="logo">
+              <img src="images/icons/logo.svg" alt="лого" />
+            </a>
+            <div class="header-center__search">
+              <form class="header-center__form" action="#">
+                <input
+                  class="header-center__input"
+                  type="text"
+                  placeholder="Что будем искать?"
+                />
+                <button class="header-center__btn">
+                  <img src="images/icons/search.svg" alt="" />
+                </button>
+              </form>
+            </div>
+            <div class="header-center__actions actions-header">
+              <div
+                data-da=".header-top__container, 880"
+                class="actions-header__phones"
+              >
+                <a href="#">
+                  <img
+                    class="actions-header__img"
+                    src="images/icons/phone-2.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="tel:79251234567" class="actions-header__phone"
+                  >+7 (925) <span>123-45-67</span>
+                </a>
+                <button class="actions-header__callback" type="button">
+                  Заказать звонок
+                </button>
+              </div>
+              <div
+                data-da=".header-top__container, 880"
+                class="actions-header__cart cart-header"
+              >
+                <div class="cart-header__icon">
+                  <img src="images/icons/cart.svg" alt="" />
+                  <span>2</span>
+                </div>
+                <a href="#" class="cart-header__text">Корзина</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="header-bottom__inner">
+              <div class="header-bottom__info">
+                <span>Меню</span>
+                <button class="header-bottom__btn">
+                  <span></span>
+                </button>
+              </div>
+              <ul class="header-bottom__list">
+                <li class="header-bottom__item">
+                  <a href="" class="header-bottom__item-link"
+                    >Анестезиологическое <br />
+                    оборудование</a
+                  >
                 </li>
-                <li class="sublist-header__item">
-                  <a href="" class="sublist-header__link">Для медицинской мебели</a>
-                </li>
-                <li class="sublist-header__item sublist-header__item-after">
-                  <a class="sublist-header__link">Для технических средств реабилитации</a>
-                  <ul class="sublist-header__sub">
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для противопролежневых матрацев</a>
+                <li class="header-bottom__item">
+                  <a class="header-bottom__item-link">Запчасти</a>
+                  <ul class="header-bottom__sublist sublist-header">
+                    <li class="sublist-header__item">
+                      <a href="" class="sublist-header__link"
+                        >Для генекологического оборудования</a
+                      >
                     </li>
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для кресел инвалидных электрических</a>
+                    <li class="sublist-header__item">
+                      <a href="" class="sublist-header__link"
+                        >Для медицинской мебели</a
+                      >
                     </li>
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для кресел-каталок</a>
+                    <li class="sublist-header__item sublist-header__item-after">
+                      <a class="sublist-header__link"
+                        >Для технических средств реабилитации</a
+                      >
+                      <ul class="sublist-header__sub">
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для противопролежневых матрацев</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных электрических</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел-каталок</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных механических</a
+                          >
+                        </li>
+                      </ul>
                     </li>
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для кресел инвалидных механических</a>
-                    </li>
-                    <li class="sublist-header__sub-item">
-                      <a href="#" class="sublist-header__sub__link">Для кресел инвалидных механических</a>
+                    <li class="sublist-header__item sublist-header__item-after">
+                      <a class="sublist-header__link"
+                        >Для медицинского оборудования</a
+                      >
+                      <ul class="sublist-header__sub">
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для противопролежневых матрацев</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных электрических</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел-каталок</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных механических</a
+                          >
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </li>
+                <li class="header-bottom__item">
+                  <a href="" class="header-bottom__item-link"
+                    >Зуботехническое <br />
+                    оборудование</a
+                  >
+                </li>
+                <li class="header-bottom__item">
+                  <a href="" class="header-bottom__item-link"
+                    >ЛОР <br />
+                    оборудование</a
+                  >
+                </li>
+                <li class="header-bottom__item">
+                  <a class="header-bottom__item-link"
+                    >Диагностическое <br />
+                    оборудование</a
+                  >
+                  <ul class="header-bottom__sublist sublist-header">
+                    <li class="sublist-header__item">
+                      <a href="" class="sublist-header__link"
+                        >Для генекологического оборудования</a
+                      >
+                    </li>
+                    <li class="sublist-header__item">
+                      <a href="" class="sublist-header__link"
+                        >Для медицинской мебели</a
+                      >
+                    </li>
+                    <li class="sublist-header__item sublist-header__item-after">
+                      <a class="sublist-header__link"
+                        >Для технических средств реабилитации</a
+                      >
+                      <ul class="sublist-header__sub">
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для противопролежневых матрацев</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных электрических</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел-каталок</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных механических</a
+                          >
+                        </li>
+                        <li class="sublist-header__sub-item">
+                          <a href="#" class="sublist-header__sub__link"
+                            >Для кресел инвалидных механических</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-bottom__item">
+                  <a href="" class="header-bottom__item-link"
+                    >Оборудование <br />
+                    для гинекологии</a
+                  >
+                </li>
+                <li class="header-bottom__item">
+                  <a href="" class="header-bottom__item-link"
+                    >Оборудование <br />
+                    для кардиологии</a
+                  >
+                </li>
               </ul>
-            </li>
-            <li class="header-bottom__item">
-              <a href="" class="header-bottom__item-link">Оборудование <br>
-                для гинекологии</a>
-            </li>
-            <li class="header-bottom__item">
-              <a href="" class="header-bottom__item-link">Оборудование <br>
-                для кардиологии</a>
-            </li>
-          </ul>
-          <a href="#" class="header-bottom__link">
-            Еще
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="header-content">
-    <div class="header-content__container">
-      <div class="header-content__slider">
-        <div class="header-content__slider-item header-content__slider-item__active ">
-          <h3 class="header-content__title-hide">
-            Оборудование для защиты
-            от инфекций
-          </h3>
-          <h2 class="header-content__title">
-            <span>Оборудование для защиты
-              от инфекций
-            </span>
-          </h2>
-          <p class="header-content__text">
-            <img src="images/slider-text-bg.png" alt="">
-            В настоящий момент сердечные заболевания являются очень распространенным недугом, и многим людям необходимо
-            постоянное наблюдение.
-          </p>
-          <a href="#" class="header-content__link">
-            Узнать подробнее
-          </a>
-        </div>
-        <div class="header-content__slider-item">
-          <h2 class="header-content__title">
-            <span>Оборудование для защиты
-              от инфекций
-            </span>
-          </h2>
-          <p class="header-content__text">
-            В настоящий момент сердечные заболевания являются очень распространенным недугом, и многим людям необходимо
-            постоянное наблюдение.
-          </p>
-          <a href="#" class="header-content__link">
-            Узнать подробнее
-          </a>
-        </div>
-        <div class="header-content__slider-item">
-          <h2 class="header-content__title">
-            <span>Оборудование для защиты
-              от инфекций
-            </span>
-          </h2>
-          <p class="header-content__text">
-            В настоящий момент сердечные заболевания являются очень распространенным недугом, и многим людям необходимо
-            постоянное наблюдение.
-          </p>
-          <a href="#" class="header-content__link">
-            Узнать подробнее
-          </a>
-        </div>
-        <div class="header-content__slider-item">
-          <h2 class="header-content__title">
-            <span>Оборудование для защиты
-              от инфекций
-            </span>
-          </h2>
-          <p class="header-content__text">
-            В настоящий момент сердечные заболевания являются очень распространенным недугом, и многим людям необходимо
-            постоянное наблюдение.
-          </p>
-          <a href="#" class="header-content__link">
-            Узнать подробнее
-          </a>
-        </div>
-        <div class="header-content__slider-item">
-          <h2 class="header-content__title">
-            <span>Оборудование для защиты
-              от инфекций
-            </span>
-          </h2>
-          <p class="header-content__text">
-            В настоящий момент сердечные заболевания являются очень распространенным недугом, и многим людям необходимо
-            постоянное наблюдение.
-          </p>
-          <a href="#" class="header-content__link">
-            Узнать подробнее
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="about">
-    <div class="about__container container">
-      <h3 class="about__title title">
-        О компании
-      </h3>
-      <div class="about__items">
-        <div class="about__item">
-          <div class="about__item-img">
-            <img src="images/icons/first-aid-kit.svg" alt="">
+              <a href="#" class="header-bottom__link"> Еще </a>
+            </div>
           </div>
-          <div class="about__item-info">
-            <h4 class="about__item-title">
-              Широкий выбор медицинского
-              оборудования
+        </div>
+      </header>
+
+      <div class="main">
+        <div class="header-content">
+          <div class="header-content__container">
+            <div class="header-content__slider">
+              <div
+                class="header-content__slider-item header-content__slider-item__active"
+              >
+                <h3 class="header-content__title-hide">
+                  Оборудование для защиты от инфекций
+                </h3>
+                <h2 class="header-content__title">
+                  <span>Оборудование для защиты от инфекций </span>
+                </h2>
+                <p class="header-content__text">
+                  <img src="images/slider-text-bg.png" alt="" />
+                  В настоящий момент сердечные заболевания являются очень
+                  распространенным недугом, и многим людям необходимо постоянное
+                  наблюдение.
+                </p>
+                <a href="#" class="header-content__link"> Узнать подробнее </a>
+              </div>
+              <div class="header-content__slider-item">
+                <h2 class="header-content__title">
+                  <span>Оборудование для защиты от инфекций </span>
+                </h2>
+                <p class="header-content__text">
+                  В настоящий момент сердечные заболевания являются очень
+                  распространенным недугом, и многим людям необходимо постоянное
+                  наблюдение.
+                </p>
+                <a href="#" class="header-content__link"> Узнать подробнее </a>
+              </div>
+              <div class="header-content__slider-item">
+                <h2 class="header-content__title">
+                  <span>Оборудование для защиты от инфекций </span>
+                </h2>
+                <p class="header-content__text">
+                  В настоящий момент сердечные заболевания являются очень
+                  распространенным недугом, и многим людям необходимо постоянное
+                  наблюдение.
+                </p>
+                <a href="#" class="header-content__link"> Узнать подробнее </a>
+              </div>
+              <div class="header-content__slider-item">
+                <h2 class="header-content__title">
+                  <span>Оборудование для защиты от инфекций </span>
+                </h2>
+                <p class="header-content__text">
+                  В настоящий момент сердечные заболевания являются очень
+                  распространенным недугом, и многим людям необходимо постоянное
+                  наблюдение.
+                </p>
+                <a href="#" class="header-content__link"> Узнать подробнее </a>
+              </div>
+              <div class="header-content__slider-item">
+                <h2 class="header-content__title">
+                  <span>Оборудование для защиты от инфекций </span>
+                </h2>
+                <p class="header-content__text">
+                  В настоящий момент сердечные заболевания являются очень
+                  распространенным недугом, и многим людям необходимо постоянное
+                  наблюдение.
+                </p>
+                <a href="#" class="header-content__link"> Узнать подробнее </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about">
+          <div class="about__container container">
+            <h3 class="about__title title">О компании</h3>
+            <div class="about__items">
+              <div class="about__item">
+                <div class="about__item-img">
+                  <img src="images/icons/first-aid-kit.svg" alt="" />
+                </div>
+                <div class="about__item-info">
+                  <h4 class="about__item-title">
+                    Широкий выбор медицинского оборудования
+                  </h4>
+                  <p class="about__item-text">
+                    Наши склады соответствуют всем строгим требованиям
+                    классификации, чтобы обеспечить максимальную безопасность
+                    хранения продукции и удобства ее
+                  </p>
+                </div>
+              </div>
+              <div class="about__item">
+                <div class="about__item-img">
+                  <img src="images/icons/manager.svg" alt="" />
+                </div>
+                <div class="about__item-info">
+                  <h4 class="about__item-title">
+                    Широкий выбор медицинского оборудования
+                  </h4>
+                  <p class="about__item-text">
+                    Наши склады соответствуют всем строгим требованиям
+                    классификации, чтобы обеспечить максимальную безопасность
+                    хранения продукции и удобства ее
+                  </p>
+                </div>
+              </div>
+              <div class="about__item">
+                <div class="about__item-img">
+                  <img src="images/icons/voucher.svg" alt="" />
+                </div>
+                <div class="about__item-info">
+                  <h4 class="about__item-title">
+                    Широкий выбор медицинского оборудования
+                  </h4>
+                  <p class="about__item-text">
+                    Наши склады соответствуют всем строгим требованиям
+                    классификации, чтобы обеспечить максимальную безопасность
+                    хранения продукции и удобства ее
+                  </p>
+                </div>
+              </div>
+              <div class="about__item">
+                <div class="about__item-img">
+                  <img src="images/icons/inbox.svg" alt="" />
+                </div>
+                <div class="about__item-info">
+                  <h4 class="about__item-title">
+                    Широкий выбор медицинского оборудования
+                  </h4>
+                  <p class="about__item-text">
+                    Наши склады соответствуют всем строгим требованиям
+                    классификации, чтобы обеспечить максимальную безопасность
+                    хранения продукции и удобства ее
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="question">
+          <div class="question__container container">
+            <span class="question__ask"> Есть вопросы? </span>
+            <div class="question__links">
+              <a href="#" class="question__link question__link-office"
+                >Адреса оффисов</a
+              >
+              <a href="#" class="question__link question__link-call"
+                >Заказать звонок</a
+              >
+              <a href="#" class="question__link question__link-submit"
+                >Отправить сообщение</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <section class="catalog">
+          <div class="catalog__container">
+            <div class="catalog__title title">
+              Каталог медицинского оборудования
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="cart.html" class="catalog__item-inner">
+                    <div class="catalog__item-img">
+                      <img src="images/slider/1.png" alt="" />
+                    </div>
+                    <div class="catalog__item-info">
+                      <h5 class="catalog__item-title">Кресла-коляски</h5>
+                      <ul class="catalog__item-list">
+                        <li class="catalog-item__list-item">
+                          Электрические кресла коляски
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски пассивные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски активные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски стальные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="cart.html" class="catalog__item-inner">
+                    <div class="catalog__item-img">
+                      <img src="images/slider/2.png" alt="" />
+                    </div>
+                    <div class="catalog__item-info">
+                      <h5 class="catalog__item-title">Кресла-коляски</h5>
+                      <ul class="catalog__item-list">
+                        <li class="catalog-item__list-item">
+                          Электрические кресла коляски
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски пассивные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски активные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски стальные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="cart.html" class="catalog__item-inner">
+                    <div class="catalog__item-img">
+                      <img src="images/slider/3.png" alt="" />
+                    </div>
+                    <div class="catalog__item-info">
+                      <h5 class="catalog__item-title">Кресла-коляски</h5>
+                      <ul class="catalog__item-list">
+                        <li class="catalog-item__list-item">
+                          Электрические кресла коляски
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски пассивные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски активные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски стальные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="cart.html" class="catalog__item-inner">
+                    <div class="catalog__item-img">
+                      <img src="images/slider/4.png" alt="" />
+                    </div>
+                    <div class="catalog__item-info">
+                      <h5 class="catalog__item-title">Кресла-коляски</h5>
+                      <ul class="catalog__item-list">
+                        <li class="catalog-item__list-item">
+                          Электрические кресла коляски
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски пассивные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски активные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски стальные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="cart.html" class="catalog__item-inner">
+                    <div class="catalog__item-img">
+                      <img src="images/slider/5.png" alt="" />
+                    </div>
+                    <div class="catalog__item-info">
+                      <h5 class="catalog__item-title">Кресла-коляски</h5>
+                      <ul class="catalog__item-list">
+                        <li class="catalog-item__list-item">
+                          Электрические кресла коляски
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски пассивные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски активные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски стальные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="cart.html" class="catalog__item-inner">
+                    <div class="catalog__item-img">
+                      <img src="images/slider/6.png" alt="" />
+                    </div>
+                    <div class="catalog__item-info">
+                      <h5 class="catalog__item-title">Кресла-коляски</h5>
+                      <ul class="catalog__item-list">
+                        <li class="catalog-item__list-item">
+                          Электрические кресла коляски
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски пассивные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски активные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски стальные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="cart.html" class="catalog__item-inner">
+                    <div class="catalog__item-img">
+                      <img src="images/slider/1.png" alt="" />
+                    </div>
+                    <div class="catalog__item-info">
+                      <h5 class="catalog__item-title">Кресла-коляски</h5>
+                      <ul class="catalog__item-list">
+                        <li class="catalog-item__list-item">
+                          Электрические кресла коляски
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски пассивные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски активные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски стальные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="cart.html" class="catalog__item-inner">
+                    <div class="catalog__item-img">
+                      <img src="images/slider/1.png" alt="" />
+                    </div>
+                    <div class="catalog__item-info">
+                      <h5 class="catalog__item-title">Кресла-коляски</h5>
+                      <ul class="catalog__item-list">
+                        <li class="catalog-item__list-item">
+                          Электрические кресла коляски
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски пассивные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски активные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски стальные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="cart.html" class="catalog__item-inner">
+                    <div class="catalog__item-img">
+                      <img src="images/slider/1.png" alt="" />
+                    </div>
+                    <div class="catalog__item-info">
+                      <h5 class="catalog__item-title">Кресла-коляски</h5>
+                      <ul class="catalog__item-list">
+                        <li class="catalog-item__list-item">
+                          Электрические кресла коляски
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски пассивные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски активные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски стальные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                        <li class="catalog-item__list-item">
+                          Кресла-коляски облегченные
+                        </li>
+                      </ul>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="swiper-navigation">
+              <button class="swiperPrev swiper-button-prev" id="swiperPrev">
+                <img src="images/icons/slider-arrow-prev.svg" alt="" />
+              </button>
+              <button class="swiperNext swiper-button-next" id="swiperNext">
+                <img src="images/icons/slider-arrow-next.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="news__container container">
+            <div class="news__content content-news">
+              <h3 class="news__title title">Новинки</h3>
+              <div class="content-news__slider slider-news">
+                <div class="slider-news__item">
+                  <div class="slider-news__item-desc news-item-desc">
+                    <h4 class="news-item-desc__title">
+                      Пример заголовка товара
+                    </h4>
+                    <p class="news-item-desc__text">
+                      В настоящий момент сердечные заболевания являются очень
+                      распространенным недугом, и многим людям необходимо
+                      постоянное наблюдение.
+                    </p>
+                  </div>
+                  <div class="slider-news__item-info news-item-info">
+                    <div class="news-item-info__desc">
+                      <div class="news-item-info__price">
+                        <p>Цена:</p>
+                        <span>27 500 р.</span>
+                      </div>
+                      <button class="news-item-info__btn header-content__link">
+                        Узнать подробнее
+                      </button>
+                    </div>
+                    <div class="news-item-info__img">
+                      <img src="images/slider-news/1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-news__item">
+                  <div class="slider-news__item-desc news-item-desc">
+                    <h4 class="news-item-desc__title">
+                      Пример заголовка товара
+                    </h4>
+                    <p class="news-item-desc__text">
+                      В настоящий момент сердечные заболевания являются очень
+                      распространенным недугом, и многим людям необходимо
+                      постоянное наблюдение.
+                    </p>
+                  </div>
+                  <div class="slider-news__item-info news-item-info">
+                    <div class="news-item-info__desc">
+                      <div class="news-item-info__price">
+                        <p>Цена:</p>
+                        <span>27 500 р.</span>
+                      </div>
+                      <button class="news-item-info__btn header-content__link">
+                        Узнать подробнее
+                      </button>
+                    </div>
+                    <div class="news-item-info__img">
+                      <img src="images/slider-news/1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-news__item">
+                  <div class="slider-news__item-desc news-item-desc">
+                    <h4 class="news-item-desc__title">
+                      Пример заголовка товара
+                    </h4>
+                    <p class="news-item-desc__text">
+                      В настоящий момент сердечные заболевания являются очень
+                      распространенным недугом, и многим людям необходимо
+                      постоянное наблюдение.
+                    </p>
+                  </div>
+                  <div class="slider-news__item-info news-item-info">
+                    <div class="news-item-info__desc">
+                      <div class="news-item-info__price">
+                        <p>Цена:</p>
+                        <span>27 500 р.</span>
+                      </div>
+                      <button class="news-item-info__btn header-content__link">
+                        Узнать подробнее
+                      </button>
+                    </div>
+                    <div class="news-item-info__img">
+                      <img src="images/slider-news/1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-news__item">
+                  <div class="slider-news__item-desc news-item-desc">
+                    <h4 class="news-item-desc__title">
+                      Пример заголовка товара
+                    </h4>
+                    <p class="news-item-desc__text">
+                      В настоящий момент сердечные заболевания являются очень
+                      распространенным недугом, и многим людям необходимо
+                      постоянное наблюдение.
+                    </p>
+                  </div>
+                  <div class="slider-news__item-info news-item-info">
+                    <div class="news-item-info__desc">
+                      <div class="news-item-info__price">
+                        <p>Цена:</p>
+                        <span>27 500 р.</span>
+                      </div>
+                      <button class="news-item-info__btn header-content__link">
+                        Узнать подробнее
+                      </button>
+                    </div>
+                    <div class="news-item-info__img">
+                      <img src="images/slider-news/1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-news__item">
+                  <div class="slider-news__item-desc news-item-desc">
+                    <h4 class="news-item-desc__title">
+                      Пример заголовка товара
+                    </h4>
+                    <p class="news-item-desc__text">
+                      В настоящий момент сердечные заболевания являются очень
+                      распространенным недугом, и многим людям необходимо
+                      постоянное наблюдение.
+                    </p>
+                  </div>
+                  <div class="slider-news__item-info news-item-info">
+                    <div class="news-item-info__desc">
+                      <div class="news-item-info__price">
+                        <p>Цена:</p>
+                        <span>27 500 р.</span>
+                      </div>
+                      <button class="news-item-info__btn header-content__link">
+                        Узнать подробнее
+                      </button>
+                    </div>
+                    <div class="news-item-info__img">
+                      <img src="images/slider-news/1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news__articles articles-news">
+              <div class="articles-news__items">
+                <h4 class="articles-news__title title">Последние новости</h4>
+                <div class="articles-news__item articles-item">
+                  <div class="articles-item__date">27 декабря 2017 года</div>
+                  <a href="#" class="articles-item__title">
+                    Как правильно выбрать косметологический лазер?
+                  </a>
+                  <p class="articles-item__text">
+                    Лазеры и другие устройства для эпиляции, такие, как IPL
+                    системы, глубоко залегли в области эстетической
+                  </p>
+                </div>
+                <div class="articles-news__item articles-item">
+                  <div class="articles-item__date">27 декабря 2017 года</div>
+                  <a href="#" class="articles-item__title">
+                    Как правильно выбрать косметологический лазер?
+                  </a>
+                  <p class="articles-item__text">
+                    Лазеры и другие устройства для эпиляции, такие, как IPL
+                    системы, глубоко залегли в области эстетической
+                  </p>
+                </div>
+                <div class="articles-news__item articles-item">
+                  <div class="articles-item__date">27 декабря 2017 года</div>
+                  <a href="#" class="articles-item__title">
+                    Как правильно выбрать косметологический лазер?
+                  </a>
+                  <p class="articles-item__text">
+                    Лазеры и другие устройства для эпиляции, такие, как IPL
+                    системы, глубоко залегли в области эстетической
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="know">
+          <div class="know__container container">
+            <h4 class="know__title title">Медицинские знания</h4>
+
+            <div class="know__slider swiper">
+              <div class="know__slider-wrapper swiper-wrapper">
+                <div class="know__item swiper-slide">
+                  <div
+                    class="know__item-img"
+                    style="background-image: url(images/know/bg-2.png)"
+                  ></div>
+                  <div class="know__item-info">
+                    <a class="know__item-info__title" href="#">
+                      Как правильно выбрать косметологический лазер?
+                    </a>
+                    <p class="know__item-info__text">
+                      Лазеры и другие устройства для эпиляции, такие, как IPL
+                      системы, глубоко залегли в области эстетической...
+                    </p>
+                  </div>
+                </div>
+                <div class="know__item swiper-slide">
+                  <div
+                    class="know__item-img"
+                    style="background-image: url(images/know/bg-2.png)"
+                  ></div>
+                  <div class="know__item-info">
+                    <a class="know__item-info__title" href="#">
+                      Как правильно выбрать косметологический лазер?
+                    </a>
+                    <p class="know__item-info__text">
+                      Лазеры и другие устройства для эпиляции, такие, как IPL
+                      системы, глубоко залегли в области эстетической...
+                    </p>
+                  </div>
+                </div>
+                <div class="know__item swiper-slide">
+                  <div
+                    class="know__item-img"
+                    style="background-image: url(images/know/bg-2.png)"
+                  ></div>
+                  <div class="know__item-info">
+                    <a class="know__item-info__title" href="#">
+                      Как правильно выбрать косметологический лазер?
+                    </a>
+                    <p class="know__item-info__text">
+                      Лазеры и другие устройства для эпиляции, такие, как IPL
+                      системы, глубоко залегли в области эстетической...
+                    </p>
+                  </div>
+                </div>
+                <div class="know__item swiper-slide">
+                  <div
+                    class="know__item-img"
+                    style="background-image: url(images/know/bg-2.png)"
+                  ></div>
+                  <div class="know__item-info">
+                    <a class="know__item-info__title" href="#">
+                      Как правильно выбрать косметологический лазер?
+                    </a>
+                    <p class="know__item-info__text">
+                      Лазеры и другие устройства для эпиляции, такие, как IPL
+                      системы, глубоко залегли в области эстетической...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="know__dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="marks">
+          <div class="marks__container">
+            <div class="container">
+              <div class="marks__slider slider-marks">
+                <div class="slider-marks__item">
+                  <img src="images/marks/1.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/2.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/3.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/4.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/5.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/6.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/1.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/1.png" alt="" />
+                </div>
+                <div class="slider-marks__item">
+                  <img src="images/marks/1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__desc">
+            <a href="#" class="footer__logo">
+              <img src="images/icons/logo.svg" alt="" />
+            </a>
+            <p class="footer__desc-text">
+              Дискриптор коротко описывающий деятельность компании в несколько
+              строчек
+            </p>
+            <span class="footer__desc-copyright"
+              >© 2017 “ООО Ценные Советы” Все права защищены</span
+            >
+          </div>
+
+          <div class="footer__list footer__list-first">
+            <h4 class="footer__list-title footer__title footer__title-after">
+              Меню:
             </h4>
-            <p class="about__item-text">
-              Наши склады соответствуют всем строгим требованиям классификации, чтобы обеспечить максимальную
-              безопасность хранения продукции и удобства ее
-            </p>
+            <ul class="footer__sublist list-footer">
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">О компании</a>
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">Доставка и оплата</a>
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">Новости и статьи</a>
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">Контакты</a>
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">Обьявления</a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="about__item">
-          <div class="about__item-img">
-            <img src="images/icons/manager.svg" alt="">
-          </div>
-          <div class="about__item-info">
-            <h4 class="about__item-title">
-              Широкий выбор медицинского
-              оборудования
+          <div class="footer__list">
+            <h4 class="footer__list-title footer__title footer__title-after">
+              Популярные категории:
             </h4>
-            <p class="about__item-text">
-              Наши склады соответствуют всем строгим требованиям классификации, чтобы обеспечить максимальную
-              безопасность хранения продукции и удобства ее
-            </p>
+            <ul class="footer__sublist list-footer">
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link"
+                  >Анастезиологическое оборудование</a
+                >
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link"
+                  >Оборудование для кардиологии</a
+                >
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link"
+                  >Зуботехническое оборудование</a
+                >
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">ЛОР оборудование</a>
+              </li>
+              <li class="list-footer__item">
+                <a href="#" class="list-footer__link">Обьявления</a>
+              </li>
+            </ul>
+            <a href="" class="footer__list-link"> Перейти в каталог </a>
           </div>
-        </div>
-        <div class="about__item">
-          <div class="about__item-img">
-            <img src="images/icons/voucher.svg" alt="">
-          </div>
-          <div class="about__item-info">
-            <h4 class="about__item-title">
-              Широкий выбор медицинского
-              оборудования
+
+          <div class="footer__feedback feedback-footer">
+            <h4 class="feedback-footer__title footer__title">
+              Связаться с нами:
             </h4>
-            <p class="about__item-text">
-              Наши склады соответствуют всем строгим требованиям классификации, чтобы обеспечить максимальную
-              безопасность хранения продукции и удобства ее
-            </p>
+            <div class="feedback-footer__phone">
+              <span class="phone-feedback"> +7 (925) 123-45-67 </span>
+              <a href="tell:79251234567" class="phone-feedback__link">
+                Заказать звонок
+              </a>
+            </div>
+            <div class="feedback-footer__mail">
+              <span class="mail-feedback"> info@test.server.ru </span>
+              <a href="mailto:info@test.server.ru" class="mail-feedback__link">
+                Написать нам
+              </a>
+            </div>
+            <div class="feedback-footer__social">
+              <a href="" class="feedback-footer__social-item">
+                <img
+                  src="images/icons/social/od.svg"
+                  alt="одноклассники"
+                  class="feedback-footer__social-img"
+                />
+              </a>
+              <a href="" class="feedback-footer__social-item">
+                <img
+                  src="images/icons/social/od.svg"
+                  alt="вконтакте"
+                  class="feedback-footer__social-img"
+                />
+              </a>
+              <a href="" class="feedback-footer__social-item">
+                <img
+                  src="images/icons/social/od.svg"
+                  alt="фейсбук"
+                  class="feedback-footer__social-img"
+                />
+              </a>
+              <a href="" class="feedback-footer__social-item">
+                <img
+                  src="images/icons/social/od.svg"
+                  alt="гугл плюс"
+                  class="feedback-footer__social-img"
+                />
+              </a>
+            </div>
           </div>
         </div>
-        <div class="about__item">
-          <div class="about__item-img">
-            <img src="images/icons/inbox.svg" alt="">
-          </div>
-          <div class="about__item-info">
-            <h4 class="about__item-title">
-              Широкий выбор медицинского
-              оборудования
-            </h4>
-            <p class="about__item-text">
-              Наши склады соответствуют всем строгим требованиям классификации, чтобы обеспечить максимальную
-              безопасность хранения продукции и удобства ее
-            </p>
-          </div>
-        </div>
-      </div>
+      </footer>
     </div>
-  </div>
 
-  <div class="question">
-    <div class="question__container container">
-      <span class="question__ask">
-        Есть вопросы?
-      </span>
-      <div class="question__links">
-        <a href="#" class="question__link question__link-office">Адреса оффисов</a>
-        <a href="#" class="question__link question__link-call">Заказать звонок</a>
-        <a href="#" class="question__link question__link-submit">Отправить сообщение</a>
-      </div>
-    </div>
-  </div>
-
-  <section class="catalog">
-    <div class="catalog__container">
-      <div class="catalog__title title">Каталог медицинского оборудования</div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="" class="catalog__item-inner">
-              <div class="catalog__item-img">
-                <img src="images/slider/1.png" alt="">
-              </div>
-              <div class="catalog__item-info">
-                <h5 class="catalog__item-title">
-                  Кресла-коляски
-                </h5>
-                <ul class="catalog__item-list ">
-                  <li class="catalog-item__list-item">Электрические кресла коляски </li>
-                  <li class="catalog-item__list-item">Кресла-коляски пассивные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски активные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски стальные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                </ul>
-
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="" class="catalog__item-inner">
-              <div class="catalog__item-img">
-                <img src="images/slider/2.png" alt="">
-              </div>
-              <div class="catalog__item-info">
-                <h5 class="catalog__item-title">
-                  Кресла-коляски
-                </h5>
-                <ul class="catalog__item-list ">
-                  <li class="catalog-item__list-item">Электрические кресла коляски </li>
-                  <li class="catalog-item__list-item">Кресла-коляски пассивные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски активные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски стальные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="" class="catalog__item-inner">
-              <div class="catalog__item-img">
-                <img src="images/slider/3.png" alt="">
-              </div>
-              <div class="catalog__item-info">
-                <h5 class="catalog__item-title">
-                  Кресла-коляски
-                </h5>
-                <ul class="catalog__item-list ">
-                  <li class="catalog-item__list-item">Электрические кресла коляски </li>
-                  <li class="catalog-item__list-item">Кресла-коляски пассивные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски активные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски стальные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="" class="catalog__item-inner">
-              <div class="catalog__item-img">
-                <img src="images/slider/4.png" alt="">
-              </div>
-              <div class="catalog__item-info">
-                <h5 class="catalog__item-title">
-                  Кресла-коляски
-                </h5>
-                <ul class="catalog__item-list ">
-                  <li class="catalog-item__list-item">Электрические кресла коляски </li>
-                  <li class="catalog-item__list-item">Кресла-коляски пассивные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски активные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски стальные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="" class="catalog__item-inner">
-              <div class="catalog__item-img">
-                <img src="images/slider/5.png" alt="">
-              </div>
-              <div class="catalog__item-info">
-                <h5 class="catalog__item-title">
-                  Кресла-коляски
-                </h5>
-                <ul class="catalog__item-list ">
-                  <li class="catalog-item__list-item">Электрические кресла коляски </li>
-                  <li class="catalog-item__list-item">Кресла-коляски пассивные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски активные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски стальные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="" class="catalog__item-inner">
-              <div class="catalog__item-img">
-                <img src="images/slider/6.png" alt="">
-              </div>
-              <div class="catalog__item-info">
-                <h5 class="catalog__item-title">
-                  Кресла-коляски
-                </h5>
-                <ul class="catalog__item-list ">
-                  <li class="catalog-item__list-item">Электрические кресла коляски </li>
-                  <li class="catalog-item__list-item">Кресла-коляски пассивные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски активные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски стальные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="" class="catalog__item-inner">
-              <div class="catalog__item-img">
-                <img src="images/slider/1.png" alt="">
-              </div>
-              <div class="catalog__item-info">
-                <h5 class="catalog__item-title">
-                  Кресла-коляски
-                </h5>
-                <ul class="catalog__item-list ">
-                  <li class="catalog-item__list-item">Электрические кресла коляски </li>
-                  <li class="catalog-item__list-item">Кресла-коляски пассивные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски активные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски стальные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="" class="catalog__item-inner">
-              <div class="catalog__item-img">
-                <img src="images/slider/1.png" alt="">
-              </div>
-              <div class="catalog__item-info">
-                <h5 class="catalog__item-title">
-                  Кресла-коляски
-                </h5>
-                <ul class="catalog__item-list ">
-                  <li class="catalog-item__list-item">Электрические кресла коляски </li>
-                  <li class="catalog-item__list-item">Кресла-коляски пассивные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски активные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски стальные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="" class="catalog__item-inner">
-              <div class="catalog__item-img">
-                <img src="images/slider/1.png" alt="">
-              </div>
-              <div class="catalog__item-info">
-                <h5 class="catalog__item-title">
-                  Кресла-коляски
-                </h5>
-                <ul class="catalog__item-list ">
-                  <li class="catalog-item__list-item">Электрические кресла коляски </li>
-                  <li class="catalog-item__list-item">Кресла-коляски пассивные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски активные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски стальные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                  <li class="catalog-item__list-item">Кресла-коляски облегченные</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-pagination"></div>
-
-        </div>
-      </div>
-      <div class="swiper-navigation">
-        <button class="swiperPrev swiper-button-prev" id="swiperPrev">
-          <img src="images/icons/slider-arrow-prev.svg" alt="">
-        </button>
-        <button class="swiperNext swiper-button-next" id="swiperNext">
-          <img src="images/icons/slider-arrow-next.svg" alt="">
-        </button>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="news">
-    <div class="news__container container">
-      <div class="news__content content-news">
-        <h3 class="news__title title">Новинки</h3>
-        <div class="content-news__slider slider-news">
-          <div class="slider-news__item">
-            <div class="slider-news__item-desc  news-item-desc ">
-              <h4 class="news-item-desc__title">
-                Пример заголовка товара
-              </h4>
-              <p class="news-item-desc__text">
-                В настоящий момент сердечные заболевания являются очень распространенным недугом, и многим людям
-                необходимо постоянное наблюдение.
-              </p>
-            </div>
-            <div class="slider-news__item-info news-item-info">
-              <div class="news-item-info__desc">
-                <div class="news-item-info__price">
-                  <p>Цена:</p>
-                  <span>27 500 р.</span>
-                </div>
-                <button class="news-item-info__btn header-content__link">
-                  Узнать подробнее
-                </button>
-              </div>
-              <div class="news-item-info__img">
-                <img src="images/slider-news/1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="slider-news__item">
-            <div class="slider-news__item-desc  news-item-desc ">
-              <h4 class="news-item-desc__title">
-                Пример заголовка товара
-              </h4>
-              <p class="news-item-desc__text">
-                В настоящий момент сердечные заболевания являются очень распространенным недугом, и многим людям
-                необходимо постоянное наблюдение.
-              </p>
-            </div>
-            <div class="slider-news__item-info news-item-info">
-              <div class="news-item-info__desc">
-                <div class="news-item-info__price">
-                  <p>Цена:</p>
-                  <span>27 500 р.</span>
-                </div>
-                <button class="news-item-info__btn header-content__link">
-                  Узнать подробнее
-                </button>
-              </div>
-              <div class="news-item-info__img">
-                <img src="images/slider-news/1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="slider-news__item">
-            <div class="slider-news__item-desc  news-item-desc ">
-              <h4 class="news-item-desc__title">
-                Пример заголовка товара
-              </h4>
-              <p class="news-item-desc__text">
-                В настоящий момент сердечные заболевания являются очень распространенным недугом, и многим людям
-                необходимо постоянное наблюдение.
-              </p>
-            </div>
-            <div class="slider-news__item-info news-item-info">
-              <div class="news-item-info__desc">
-                <div class="news-item-info__price">
-                  <p>Цена:</p>
-                  <span>27 500 р.</span>
-                </div>
-                <button class="news-item-info__btn header-content__link">
-                  Узнать подробнее
-                </button>
-              </div>
-              <div class="news-item-info__img">
-                <img src="images/slider-news/1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="slider-news__item">
-            <div class="slider-news__item-desc  news-item-desc ">
-              <h4 class="news-item-desc__title">
-                Пример заголовка товара
-              </h4>
-              <p class="news-item-desc__text">
-                В настоящий момент сердечные заболевания являются очень распространенным недугом, и многим людям
-                необходимо постоянное наблюдение.
-              </p>
-            </div>
-            <div class="slider-news__item-info news-item-info">
-              <div class="news-item-info__desc">
-                <div class="news-item-info__price">
-                  <p>Цена:</p>
-                  <span>27 500 р.</span>
-                </div>
-                <button class="news-item-info__btn header-content__link">
-                  Узнать подробнее
-                </button>
-              </div>
-              <div class="news-item-info__img">
-                <img src="images/slider-news/1.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="slider-news__item">
-            <div class="slider-news__item-desc  news-item-desc ">
-              <h4 class="news-item-desc__title">
-                Пример заголовка товара
-              </h4>
-              <p class="news-item-desc__text">
-                В настоящий момент сердечные заболевания являются очень распространенным недугом, и многим людям
-                необходимо постоянное наблюдение.
-              </p>
-            </div>
-            <div class="slider-news__item-info news-item-info">
-              <div class="news-item-info__desc">
-                <div class="news-item-info__price">
-                  <p>Цена:</p>
-                  <span>27 500 р.</span>
-                </div>
-                <button class="news-item-info__btn header-content__link">
-                  Узнать подробнее
-                </button>
-              </div>
-              <div class="news-item-info__img">
-                <img src="images/slider-news/1.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="news__articles articles-news">
-        <div class="articles-news__items">
-          <h4 class="articles-news__title title">
-            Последние новости
-          </h4>
-          <div class="articles-news__item articles-item">
-            <div class="articles-item__date">
-              27 декабря 2017 года
-            </div>
-            <a href="#" class="articles-item__title">
-              Как правильно выбрать косметологический лазер?
-            </a>
-            <p class="articles-item__text">
-              Лазеры и другие устройства для эпиляции, такие, как IPL системы, глубоко залегли в области эстетической
-            </p>
-          </div>
-          <div class="articles-news__item articles-item">
-            <div class="articles-item__date">
-              27 декабря 2017 года
-            </div>
-            <a href="#" class="articles-item__title">
-              Как правильно выбрать косметологический лазер?
-            </a>
-            <p class="articles-item__text">
-              Лазеры и другие устройства для эпиляции, такие, как IPL системы, глубоко залегли в области эстетической
-            </p>
-          </div>
-          <div class="articles-news__item articles-item">
-            <div class="articles-item__date">
-              27 декабря 2017 года
-            </div>
-            <a href="#" class="articles-item__title">
-              Как правильно выбрать косметологический лазер?
-            </a>
-            <p class="articles-item__text">
-              Лазеры и другие устройства для эпиляции, такие, как IPL системы, глубоко залегли в области эстетической
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <div class="know">
-    <div class="know__container container">
-      <h4 class="know__title title">
-        Медицинские знания
-      </h4>
-      <div class="know__items">
-        <div class="know__item">
-          <div class="know__item-img" style="background-image: url(images/know/bg-2.png) ;">
-            <img src="images/know/1.png" alt="">
-          </div>
-          <div class="know__item-info">
-            <a class="know__item-info__title" href="#">
-              Как правильно выбрать
-              косметологический лазер?
-            </a>
-            <p class="know__item-info__text">
-              Лазеры и другие устройства для эпиляции, такие, как IPL системы, глубоко залегли
-              в области эстетической...
-            </p>
-          </div>
-        </div>
-        <div class="know__item">
-          <div class="know__item-img" style="background-image: url(images/know/bg-2.png) ;">
-            <img src="images/know/1.png" alt="">
-          </div>
-          <div class="know__item-info">
-            <a class="know__item-info__title" href="#">
-              Как правильно выбрать
-              косметологический лазер?
-            </a>
-            <p class="know__item-info__text">
-              Лазеры и другие устройства для эпиляции, такие, как IPL системы, глубоко залегли
-              в области эстетической...
-            </p>
-          </div>
-        </div>
-        <div class="know__item">
-          <div class="know__item-img" style="background-image: url(images/know/bg-2.png) ;">
-            <img src="images/know/1.png" alt="">
-          </div>
-          <div class="know__item-info">
-            <a class="know__item-info__title" href="#">
-              Как правильно выбрать
-              косметологический лазер?
-            </a>
-            <p class="know__item-info__text">
-              Лазеры и другие устройства для эпиляции, такие, как IPL системы, глубоко залегли
-              в области эстетической...
-            </p>
-          </div>
-        </div>
-        <div class="know__item">
-          <div class="know__item-img" style="background-image: url(images/know/bg-2.png) ;">
-            <img src="images/know/1.png" alt="">
-          </div>
-          <div class="know__item-info">
-            <a class="know__item-info__title" href="#">
-              Как правильно выбрать
-              косметологический лазер?
-            </a>
-            <p class="know__item-info__text">
-              Лазеры и другие устройства для эпиляции, такие, как IPL системы, глубоко залегли
-              в области эстетической...
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -
-
-
-  <div class="marks">
-    <div class="marks__container">
-      <div class="container">
-        <div class="marks__slider slider-marks">
-
-          <div class="slider-marks__item">
-            <img src="images/marks/1.png" alt="">
-          </div>
-          <div class="slider-marks__item">
-            <img src="images/marks/2.png" alt="">
-          </div>
-          <div class="slider-marks__item">
-            <img src="images/marks/3.png" alt="">
-          </div>
-          <div class="slider-marks__item">
-            <img src="images/marks/4.png" alt="">
-          </div>
-          <div class="slider-marks__item">
-            <img src="images/marks/5.png" alt="">
-          </div>
-          <div class="slider-marks__item">
-            <img src="images/marks/6.png" alt="">
-          </div>
-          <div class="slider-marks__item">
-            <img src="images/marks/1.png" alt="">
-          </div>
-          <div class="slider-marks__item">
-            <img src="images/marks/1.png" alt="">
-          </div>
-          <div class="slider-marks__item">
-            <img src="images/marks/1.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="footer__container container">
-      <div class="footer__desc">
-        <a href="#" class="footer__logo">
-          <img src="images/icons/logo.svg" alt="">
-        </a>
-        <p class="footer__desc-text">
-          Дискриптор коротко описывающий
-          деятельность компании в несколько
-          строчек
-        </p>
-        <span class="footer__desc-copyright">© 2017 “ООО Ценные Советы” Все права защищены</span>
-      </div>
-
-      <div class="footer__list footer__list-first ">
-        <h4 class="footer__list-title footer__title footer__title-after">
-          Меню:
-        </h4>
-        <ul class="footer__sublist list-footer">
-          <li class="list-footer__item">
-            <a href="#" class="list-footer__link">О компании</a>
-          </li>
-          <li class="list-footer__item">
-            <a href="#" class="list-footer__link">Доставка и оплата</a>
-          </li>
-          <li class="list-footer__item">
-            <a href="#" class="list-footer__link">Новости и статьи</a>
-          </li>
-          <li class="list-footer__item">
-            <a href="#" class="list-footer__link">Контакты</a>
-          </li>
-          <li class="list-footer__item">
-            <a href="#" class="list-footer__link">Обьявления</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__list">
-        <h4 class="footer__list-title footer__title  footer__title-after">
-          Популярные категории:
-        </h4>
-        <ul class="footer__sublist list-footer">
-          <li class="list-footer__item">
-            <a href="#" class="list-footer__link">Анастезиологическое оборудование</a>
-          </li>
-          <li class="list-footer__item">
-            <a href="#" class="list-footer__link">Оборудование для кардиологии</a>
-          </li>
-          <li class="list-footer__item">
-            <a href="#" class="list-footer__link">Зуботехническое оборудование</a>
-          </li>
-          <li class="list-footer__item">
-            <a href="#" class="list-footer__link">ЛОР оборудование</a>
-          </li>
-          <li class="list-footer__item">
-            <a href="#" class="list-footer__link">Обьявления</a>
-          </li>
-        </ul>
-        <a href="" class="footer__list-link">
-          Перейти в каталог
-        </a>
-      </div>
-
-      <div class="footer__feedback feedback-footer">
-        <h4 class="feedback-footer__title footer__title">
-          Связаться с нами:
-        </h4>
-        <div class="feedback-footer__phone">
-          <span class="phone-feedback">
-            +7 (925) 123-45-67
-          </span>
-          <a href="tell:79251234567" class="phone-feedback__link">
-            Заказать звонок
-          </a>
-        </div>
-        <div class="feedback-footer__mail ">
-          <span class="mail-feedback">
-            info@test.server.ru
-          </span>
-          <a href="mailto:info@test.server.ru" class="mail-feedback__link">
-            Написать нам
-          </a>
-        </div>
-        <div class="feedback-footer__social">
-          <a href="" class="feedback-footer__social-item">
-            <img src="images/icons/social/od.svg" alt="одноклассники" class="feedback-footer__social-img">
-          </a>
-          <a href="" class="feedback-footer__social-item">
-            <img src="images/icons/social/od.svg" alt="вконтакте" class="feedback-footer__social-img">
-          </a>
-          <a href="" class="feedback-footer__social-item">
-            <img src="images/icons/social/od.svg" alt="фейсбук" class="feedback-footer__social-img">
-          </a>
-          <a href="" class="feedback-footer__social-item">
-            <img src="images/icons/social/od.svg" alt="гугл плюс" class="feedback-footer__social-img">
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </footer>
-
-
-
-
-  <script src="js/main.min.js"></script>
-</body>
-
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
